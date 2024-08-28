@@ -47,6 +47,7 @@ else {
 					echo '<ul id="recs">';
 					while ($row = mysqli_fetch_assoc($getposts)) {
 						$id = $row['id'];
+						$pCode = $row['pCode'];
 						$pName = $row['pName'];
 						$price = $row['price'];
 						$description = $row['description'];
@@ -58,7 +59,7 @@ else {
 									<div class="home-prodlist-img"><a href="view_product.php?pid='.$id.'">
 										<img src="../image/product/chocholate/'.$picture.'" class="home-prodlist-imgi">
 										</a>
-										<div style="text-align: center; padding: 0 0 6px 0;"> <span style="font-size: 15px;">'.$pName.'</span><br> Price: '.$price.' Tk</div>
+										<div style="text-align: center; padding: 0 0 6px 0;"> <span style="font-size: 15px;">'.$pCode.'</span><br>  <span style="font-size: 15px;">'.$pName.'</span><br>  Price: '.$price.' Tk</div>
 									</div>
 									
 								</li>

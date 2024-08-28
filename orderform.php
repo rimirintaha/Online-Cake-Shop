@@ -48,17 +48,33 @@ $mbl = $_POST['mobile'];
 $addr = $_POST['address'];
 $quan = $_POST['Quantity'];
 $del = $_POST['Delivery'];
+
+
+//.......................................................................................................................
 //triming name
 	try {
+
+		if($available>=$quan){
+
+			
+		}
+		
+		else{
+			echo "Not Available";
+		}
+
+//.......................................................................................................................
+
 		if(empty($_POST['mobile'])) {
 			throw new Exception('Mobile can not be empty');
-			
 		}
 		if(empty($_POST['address'])) {
 			throw new Exception('Address can not be empty');
 			
 		}
+
 		if(empty($_POST['Quantity'])) {
+
 			throw new Exception('Quantity can not be empty');
 			
 		}
@@ -67,7 +83,6 @@ $del = $_POST['Delivery'];
 			
 		}
 
-		
 		// Check if email already exists
 		
 		
@@ -77,8 +92,7 @@ $del = $_POST['Delivery'];
 						$msg = "
 					
 						Your Order suc
-
-						
+	
 						";
 						
 							
@@ -113,8 +127,8 @@ $del = $_POST['Delivery'];
 	}
 }
 
-
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -135,7 +149,6 @@ $del = $_POST['Delivery'];
 							echo '<a style="text-decoration: none; color: #fff;" href="signin.php">SIGN IN</a>';
 						}
 					 ?>
-					
 				</div>
 				<div class="uiloginbutton signinButton loginButton" style="">
 					<?php 
@@ -166,16 +179,16 @@ $del = $_POST['Delivery'];
 		<table>
 			<tr>
 				<th>
-					<a href="chocholate.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Chocholate</a>
+					<a href="OurProducts/chocholate.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Chocholate</a>
 				</th>
-				<th><a href="vanilla.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Vanilla</a></th>
-				<th><a href="mango.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Mango</a></th>
-				<th><a href="orange.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Orange</a></th>
-				<th><a href="redVelvet.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Redvelvet</a></th>
-				<th><a href="bento.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Bento</a></th>
-				<th><a href="lemon.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Lemon</a></th>
-				<th><a href="jar.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Jar</a></th>
-				<th><a href="tub.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Tub</a></th>
+				<th><a href="OurProducts/vanilla.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Vanilla</a></th>
+				<th><a href="OurProducts/mango.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Mango</a></th>
+				<th><a href="OurProducts/orange.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Orange</a></th>
+				<th><a href="OurProducts/redVelvet.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Redvelvet</a></th>
+				<th><a href="OurProducts/bento.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Bento</a></th>
+				<th><a href="OurProducts/lemon.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Lemon</a></th>
+				<th><a href="OurProducts/jar.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Jar</a></th>
+				<th><a href="OurProducts/tub.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Tub</a></th>
 			</tr>
 		</table>
 	</div>
@@ -266,7 +279,7 @@ $del = $_POST['Delivery'];
 									Types of Delivery <br>
 									
 
-									 <input name="Delivery" required="required" value="Express Delivery +100php upon cash on delivery" type="radio"  placeholder="Mode Of Payment"> Express Delivery </br>
+									 <input name="Delivery" required="required" value="Express Delivery +100TK upon cash on delivery" type="radio"  placeholder="Mode Of Payment"> Express Delivery </br>
 									 <input name="Delivery" type="radio" value="Standard Delivery" required="required" placeholder="Mode Of Payment"> Standard Delivery </br>
 									 </font>
 

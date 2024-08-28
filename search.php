@@ -76,19 +76,19 @@ $search_value = trim($_GET['keywords']);
 		</div>
 	</div>
 	<div class="categolis">
-		<table>
+	<table>
 			<tr>
 				<th>
-					<a href="chocholate.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Chocholate</a>
+					<a href="OurProducts/chocholate.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Chocholate</a>
 				</th>
-				<th><a href="vanilla.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Vanilla</a></th>
-				<th><a href="mango.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Mango</a></th>
-				<th><a href="orange.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Orange</a></th>
-				<th><a href="redVelvet.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Redvelvet</a></th>
-				<th><a href="bento.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Bento</a></th>
-				<th><a href="lemon.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Lemon</a></th>
-				<th><a href="jar.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Jar</a></th>
-				<th><a href="tub.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Tub</a></th>
+				<th><a href="OurProducts/vanilla.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Vanilla</a></th>
+				<th><a href="OurProducts/mango.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Mango</a></th>
+				<th><a href="OurProducts/orange.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Orange</a></th>
+				<th><a href="OurProducts/redVelvet.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Redvelvet</a></th>
+				<th><a href="OurProducts/bento.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Bento</a></th>
+				<th><a href="OurProducts/lemon.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Lemon</a></th>
+				<th><a href="OurProducts/jar.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Jar</a></th>
+				<th><a href="OurProducts/tub.php" style="text-decoration: none;color: #040403;padding: 4px 12px;background-color: #e6b7b8;border-radius: 12px;">Tub</a></th>
 			</tr>
 		</table>
 	</div>

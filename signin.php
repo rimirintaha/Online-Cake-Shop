@@ -85,19 +85,20 @@ $_POST['last_name'] = trim($_POST['last_name']);
 						Signup email: ".$_POST['email']."
 						
 						";
-						if (@mail($_POST['email']," Activation Code",$msg, "From:  <rubelduet124019@gmail.com>")) {
+						$subject = "Activation code";
+						$form = "From: rubelduet124019@gmail.com";
+						if (mail($_POST['email'],$subject,$msg,$form)) {
 							
-						$result = mysqli_query($con, "INSERT INTO user (firstName,lastName,email,mobile,address,password,confirmCode) VALUES ('$_POST[first_name]','$_POST[last_name]','$_POST[email]','$_POST[mobile]','$_POST[signupaddress]','$_POST[password]','$confirmCode')");
+							$result = mysqli_query($con, "INSERT INTO user (firstName,lastName,email,mobile,address,password,confirmCode) VALUES ('$_POST[first_name]','$_POST[last_name]','$_POST[email]','$_POST[mobile]','$_POST[signupaddress]','$_POST[password]','$confirmCode')");
 						
 						//success message
 						$success_message = '
-						<div class="signupform_content"><h2><font face="bookman">Registration successfull!</font></h2>
-						<div class="signupform_text" style="font-size: 18px; text-align: center;">
-						<font face="bookman">
-							Email: '.$u_email.'<br>
-							Activation code sent to your email. <br>
-							Your activation code: '.$confirmCode.'
-						</font></div></div>';
+						<div class="signupform_content">
+							<h2><font face="bookman">Registration successfull!</font></h2>
+
+							<h2><font face="bookman">Please, Click a Login Button >>></font></h2>
+
+						</div>';
 						}else {
 							throw new Exception('Email is not valid!');
 						}

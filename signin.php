@@ -59,7 +59,6 @@ $_POST['last_name'] = trim($_POST['last_name']);
 			throw new Exception('Address can not be empty');
 			
 		}
-
 		
 		// Check if email already exists
 		
@@ -86,7 +85,7 @@ $_POST['last_name'] = trim($_POST['last_name']);
 						Signup email: ".$_POST['email']."
 						
 						";
-						//if (@mail($_POST['email'],"eBuyBD Activation Code",$msg, "From:eBuyBD <no-reply@ebuybd.xyz>")) {
+						if (@mail($_POST['email']," Activation Code",$msg, "From:  <rubelduet124019@gmail.com>")) {
 							
 						$result = mysqli_query($con, "INSERT INTO user (firstName,lastName,email,mobile,address,password,confirmCode) VALUES ('$_POST[first_name]','$_POST[last_name]','$_POST[email]','$_POST[mobile]','$_POST[signupaddress]','$_POST[password]','$confirmCode')");
 						
@@ -99,12 +98,12 @@ $_POST['last_name'] = trim($_POST['last_name']);
 							Activation code sent to your email. <br>
 							Your activation code: '.$confirmCode.'
 						</font></div></div>';
-						//}else {
-							//throw new Exception('Email is not valid!');
-						//}
+						}else {
+							throw new Exception('Email is not valid!');
+						}
 						
 						
-					}else {
+					} else {
 						throw new Exception('Make strong password!');
 					}
 				}else {
@@ -128,7 +127,6 @@ $_POST['last_name'] = trim($_POST['last_name']);
 
 
 ?>
-
 
 <!doctype html>
 <html>

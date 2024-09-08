@@ -43,27 +43,19 @@ $getposts = mysqli_query($con, "SELECT * FROM products WHERE id ='$poid'") or di
 //order
 
 if (isset($_POST['order'])) {
-//declere veriable
-$mbl = $_POST['mobile'];
-$addr = $_POST['address'];
-$quan = $_POST['Quantity'];
-$del = $_POST['Delivery'];
+	$quan = $_POST['Quantity'];
+
+	if($available>0 && $available>=$quan){
 
 
-//.......................................................................................................................
-//triming name
+		//declere veriable
+		$mbl = $_POST['mobile'];
+		$addr = $_POST['address'];
+		$del = $_POST['Delivery'];
+
+
 	try {
 
-		if($available>=$quan){
-
-			
-		}
-		
-		else{
-			echo "Not Available";
-		}
-
-//.......................................................................................................................
 
 		if(empty($_POST['mobile'])) {
 			throw new Exception('Mobile can not be empty');
@@ -122,9 +114,21 @@ $del = $_POST['Delivery'];
 						
 
 	}
+
+
 	catch(Exception $e) {
 		$error_message = $e->getMessage();
 	}
+
+	}
+
+	else{
+
+		echo '<script> window.alert("Product Not Available . . . "); </script>';
+		
+		
+	}
+	
 }
 
 ?>
@@ -246,7 +250,7 @@ $del = $_POST['Delivery'];
 						<div>
 							<form action="" method="POST" class="registration">
 								<div class="signup_form">
-								<h3 style="color:red;font-size:18px; padding: 5px;">Accepting CashOnDelivery Only</h3>
+								<h3 style="color:red;font-size:18px; padding: 5px;">Accepting Cash On Delivery Only</h3>
 									<div>
 										<td>
 											<input name="fullname" placeholder="your name" required="required" class="email signupbox" type="text" size="30" value="'.$uname_db.'">

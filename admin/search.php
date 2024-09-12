@@ -36,7 +36,7 @@ $search_value = trim($_GET['keywords']);
 		<title>Online Cake Shop</title>
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
 	</head>
-	<body class="home-welcome-text" style="background-image: url(../image/homebackgrndimg2.png);">
+	<body class="home-welcome-text" style="background-image: url(../image/homebackgrndimg2.jfif);">
 		<div class="homepageheader">
 			<div class="signinButton loginButton">
 				<div class="uiloginbutton signinButton loginButton" style="margin-right: 40px;">
@@ -114,6 +114,7 @@ $search_value = trim($_GET['keywords']);
 						$pName = substr($row['pName'], 0,50);
 						$descri = $row['description'];
 						$price = $row['price'];
+						$piece = $row['piece'];
 						$available = $row['available'];
 						$category = $row['category'];
 						$type = $row['type'];

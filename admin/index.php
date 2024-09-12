@@ -24,7 +24,7 @@ $search_value = "";
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<script src="/js/homeslideshow.js"></script>
 	</head>
-	<body style="min-width: 980px; background-image: url(../image/homebackgrndimg1.jpg);">
+	<body style="min-width: 980px; background-image: url(../image/homebackgrndimg3.jfif);">
 		<div class="homepageheader">
 			<div class="signinButton loginButton">
 				<div class="uiloginbutton signinButton loginButton" style="margin-right: 40px;">
@@ -83,7 +83,7 @@ $search_value = "";
 				</tr>
 			</table>
 		</div>
-		<div class="home-welcome" style="text-align: center; padding-bottom:20px; ">
+		<div class="home-welcome" style="text-align: center; color:  #2874a6 ; padding-bottom:20px; ">
 			<div class="home-welcome-text">
 				<h1>Welcome To Admin Panel</h1>
 				<h2>You have all permission to do!</h2>

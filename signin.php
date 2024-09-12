@@ -135,7 +135,7 @@ $_POST['last_name'] = trim($_POST['last_name']);
 		<title>Online Cake Shop</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
-	<body class="home-welcome-text" style="background-image: url(image/homebackgrndimg2.jpg);">
+	<body class="home-welcome-text" style="background-image: url(image/homebackgrndimg2.jfif);">
 		<div class="homepageheader" style="position: inherit;">
 			<div class="signinButton loginButton">
 				<div class="uiloginbutton signinButton loginButton" style="margin-right: 40px;">

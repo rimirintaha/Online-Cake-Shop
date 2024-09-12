@@ -99,7 +99,7 @@ $npass1 = $_POST['npass1'];
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body style="background-image: url(image/homebackgrndimg1.jpg);">
+<body style="background-image: url(image/homebackgrndimgSetting1.jfif);">
 	<div class="homepageheader">
 			<div class="signinButton loginButton">
 				<div class="uiloginbutton signinButton loginButton" style="margin-right: 40px;">
@@ -155,26 +155,26 @@ $npass1 = $_POST['npass1'];
 					<div class="holecontainer" style=" padding-top: 20px; padding: 0 20%">
 						<form action="" method="POST" class="registration">
 							<div class="container signupform_content ">
-								<div style="font-size: 20px;color: #fff;margin: 0 0 5px 0;">
+								<div style="font-size: 20px;color:   #1b4f72   ;margin: 0 0 5px 0;">
 									<tr >Change Password:</tr></br>
 								</div>
 								<div>
-									<tr><input class="email signupbox" type="password" name="opass" placeholder="Old Password"></tr></br>
+									<tr><input style="border: 1px solid  #154360 ;" class="email signupbox" type="password" name="opass" placeholder="Old Password"></tr></br>
 								</div>
 								<div>
-									<tr><input class="email signupbox" type="password" name="npass" placeholder="New Password"></tr></br>
+									<tr><input style="border: 1px solid  #154360 ;" class="email signupbox" type="password" name="npass" placeholder="New Password"></tr></br>
 								</div>
 								<div>
-									<tr><input class="email signupbox" type="password" name="npass1" placeholder="Repeat Password"></tr></br></br></br></br></br>
+									<tr><input style="border: 1px solid  #154360 ;" class="email signupbox" type="password" name="npass1" placeholder="Repeat Password"></tr></br></br></br></br></br>
 								</div>
-								<div style="font-size: 20px;color: #fff;margin: 0 0 5px 0;">
+								<div style="font-size: 20px;color:  #1b4f72 ;margin: 0 0 5px 0;">
 									<tr>Change Email:<br></tr>
 								</div>
 								<div>
-									<tr><?php echo '<input class="email signupbox" required type="email" name="email" placeholder="New Email" value="'.$uemail_db.'">'; ?></tr></br>
+									<tr><?php echo '<input style="border: 1px solid  #154360 ;" class="email signupbox" required type="email" name="email" placeholder="New Email" value="'.$uemail_db.'">'; ?></tr></br>
 								</div>
 								<div>
-									<tr><input class="uisignupbutton signupbutton" type="submit" name="changesettings" value="Update Settings"></tr></br>
+									<tr><input style="border: 1px solid  #154360 ;" class="uisignupbutton signupbutton" type="submit" name="changesettings" value="Update Settings"></tr></br>
 								</div>
 								<div>
 									<?php if (isset($success_message)) {echo $success_message;} ?>

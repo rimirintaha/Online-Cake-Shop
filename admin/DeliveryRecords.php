@@ -23,7 +23,7 @@ else {
 		<title>Online Cake Shop</title>
 		<link rel="stylesheet" type="text/css" href="../css/style.css">
 	</head>
-	<body class="home-welcome-text" style="background-image: url(../image/homebackgrndimg2.png);">
+	<body class="home-welcome-text" style="background-image: url(../image/homebackgrndimg3.jfif);">
 		<div class="homepageheader">
 			<div class="signinButton loginButton">
 				<div class="uiloginbutton signinButton loginButton" style="margin-right: 40px;">
